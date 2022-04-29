@@ -1,0 +1,267 @@
+@media only screen and (max-width:1700px){
+/*-----------Home page css start------------*/    
+/*home banner css start*/
+.home-small-bnr a{padding-bottom: 8px;}
+/*home banner css end*/
+/*-----------Home page css end------------*/  
+}
+
+@media only screen and (max-width:1440px){
+/*header css start*/
+.header-search{max-width: 400px; margin-right: 20px;}
+/*header css end*/
+/*-----------Home page css start------------*/  
+/*home banner css start*/
+.home-bnr-slider{width: 61%;}
+.home-small-bnr{width: 39%;}
+/*home banner css end*/
+/*home decor css start*/
+.home-decor-block .row{margin-left: -5px; margin-right: -5px;}
+.home-decor-block .grid-5-col{padding-left: 5px; padding-right: 5px;}
+/*home decor css end*/
+/*custorm review css start*/
+.customer-card .img-box img{min-height: 200px;}
+/*custorm review css end*/
+/*-----------Home page css end------------*/ 
+/*footer css start*/
+.foot-bottom-block .other-links a{font-size: 13px;}
+/*footer css end*/
+/*-----------product detail css start------------*/ 
+.product-finish ul li{width: calc(33.33% - 7px);}
+/*-----------product detail css end------------*/ 
+}
+
+@media only screen and (max-width:1199px){
+/*-----------Home page css start------------*/  
+/*home product list css start*/
+.home-product-category .product-category-card{width: 25%;}
+/*home product list css end*/
+/*slider arrow css start*/
+.new-product-slider.owl-theme .owl-nav, .top-seller-slider.owl-theme .owl-nav, .living-room-slider.owl-theme .owl-nav, .review-slide.owl-theme .owl-nav{left: 0; right: 0;}
+/*slider arrow css end*/
+.category-main-block .category-title{font-size: 14px;}
+.home-decor-block .grid-5-col{flex:0 0 25%; max-width: 25%;} 
+.store-block .grid-5-col{flex:0 0 25%; max-width: 25%;} 
+.customer-card .img-box img {min-height: 250px;}
+.request-call-btn{width: 60px;}
+/*-----------Home page css end------------*/ 
+/*-------Product listing css start--------*/ 
+.listing-block .container{max-width: 100%;}
+.filter-slider.owl-theme .owl-nav {left: 0;right: 0;}
+.side-bar-col{max-width: 270px;}
+.listing-content-col {max-width: calc(100% - 270px);padding-left: 20px;}
+/*-------Product listing css end--------*/ 
+/*-------contact us css start-------*/
+.contact-us-block .nav-tabs .nav-link{padding: 20px 5px;}
+.contact-us-block .nav-tabs .nav-link span{font-size: 13px;}
+/*-------contact us css end-------*/
+/*-----------product detail css start------------*/ 
+.review-right-block{padding-left: 25px;}
+.product-top-info .pricedetail .offerprice{font-size: 20px;}
+.product-top-info .pricedetail .offerprice .offprice{font-size: 14px;}
+/*-----------product detail css end------------*/ 
+}
+
+@media only screen and (min-width:992px){
+.side-bar-col .filter{display: block!important;}
+}
+
+@media only screen and (max-width:991px){
+/*header css start*/
+.head-mid{padding: 0;}
+#nav-icon{top: -110px; right: 15px; position: absolute;}
+.navbar-brand{margin:15px 0 15px 0;}
+.site-header .navbar{margin-top: 15px;}
+.site-header .navbar-expand-lg .navbar-collapse {background: #000000;padding: 15px 0;position: fixed;left: -50%;bottom: 0;top: 0;height: 100%;width: 50%;display: block;transition: ease all 0.1s;overflow: auto;}
+.site-header .navbar-expand-lg .navbar-nav .dropdown-menu{padding: 13px 15px; max-height: 350px; overflow: auto;}
+.site-header .navbar-expand-lg .navbar-collapse.show {left: 0;}
+.site-header .navbar-expand-lg .navbar-collapse.show {left: 0;}
+.site-header .navbar-nav li{margin-bottom: 5px;}
+.site-header .navbar-nav li:last-child{margin-bottom: 0;}
+.site-header .navbar-nav li::after{display: none;}
+.site-header .navbar-nav li a.nav-link{padding: 0 0 10px; color: #ffffff;}
+.site-header .navbar-nav li a.nav-link::after{display: none;}
+.site-header.inner .navbar-nav li a.nav-link{color: #ffffff;}
+.site-header .navbar-expand-lg .navbar-collapse{padding: 15px;}
+.site-header .navbar-nav li.dropdown .dropdown-toggle::after {display:block;font-size:14px;border: none;font-family: "Font Awesome 5 Free";font-weight: 900;content: "\f107";position: absolute;right: 0;top: 1px;left: auto;width: auto;}
+.site-header .navbar-nav li.dropdown.show .dropdown-toggle::after{content: "\f106";}
+.nav-column{border: none;}
+.header-search{order: 2; max-width: 100%; margin: 0;}
+.head-link{margin-left: auto; margin-right: 52px;}
+.head-link li a{font-size: 12px;}
+.head-link li a .icon svg{width: auto; height: 17px; margin-bottom: 3px;}
+.head-link li a .icon.store svg {width: auto;height: 24px;margin-bottom: -4px;}
+/*header css end*/
+/*-----------Home page css start------------*/  
+.home-product-category .product-category-card {padding-left: 10px;padding-right: 10px;margin-bottom: 5px;}
+.other-categories-block .row{margin-left: -5px; margin-right: -5px;}
+.other-categories-block [class*="col-"]{padding-left: 5px; padding-right: 5px;}
+.category-main-block{margin-top: 10px;}
+.home-decor-block .grid-5-col {flex: 0 0 33.33%;max-width: 33.33%;}
+.store-block .grid-5-col {flex: 0 0 33.33%;max-width: 33.33%;}
+.customer-card .img-box img {min-height: 295px;}
+/*-----------Home page css end------------*/ 
+/*footer css start*/
+.footer-top-block{padding-top: 30px;}
+.footer-top-block h3{font-size: 15px; margin-bottom: 15px;}
+.foot-link li {margin-top: 6px;font-size: 13px;}
+.foot-bottom-block {padding: 25px 0 25px;}
+.foot-mid-payment{margin-top: 10px;}
+.foot-download-app{margin-top: 10px;}
+.other-links{width: 100%; margin-top: 10px;}
+.social-icon li{margin-left: 6px;}
+/*footer css end*/
+/*-------Product listing css start--------*/ 
+.side-bar-col{max-width: 100%;}
+.listing-content-col {max-width: 100%;padding-left: 0;}
+.side-bar-col .filter{display: none;}
+.side-bar-col .filter-toggle{background-color: #ffffff; padding: 15px 15px; cursor: pointer; margin: 0;}
+.side-bar-head{padding: 0 15px 20px;}
+.filter .text-link{position: relative; top: auto; right: auto;}
+/*-------Product listing css end--------*/ 
+/*-------contact us css start-------*/
+.contact-form-title{font-size: 15px;}
+.contact-us-block .tab-content{padding: 20px;}
+.contact-form .form-group label {margin: 0 0 4px 0;font-size: 13px;}
+.contact-us-block .nav-tabs .nav-link span{font-size: 12px;}
+.contact-us-block .service-info p{font-size: 12px;}
+/*-------contact us css end-------*/
+/*-----------product detail css start------------*/ 
+.product-top-info{margin-top: 15px;}
+.choose-product-card{margin-bottom: 12px;}
+.customer-review{font-size: 13px;}
+/*-----------product detail css end------------*/ 
+}
+
+
+@media only screen and (max-width:767px){
+/*header css start*/
+.head-top-bar{padding: 10px 0;}
+.head-contact-link li a .icon img, .head-contact-link li a .icon svg{height: 15px;}
+.head-contact-link li a{font-size: 12px;}
+/*header css end*/
+/*-----------Home page css start------------*/  
+.home-bnr-slider{width: 100%; padding: 0;}
+.home-small-bnr{width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 8px;}
+.home-small-bnr a {width: 49.55%;padding: 0;}
+.home-small-bnr a img{height: auto;}
+.home-product-category .product-category-card{width: 33.33%;}
+.home-product-category .container-lrg{padding-bottom: 20px;}
+.view-link{font-size: 13px;}
+.request-call-btn{width: 50px;}
+/*-----------Home page css end------------*/ 
+/*footer css start*/
+.footer-top-block{padding-top: 10px;}
+.footer-top-block .grid-5-col{flex:0 0 33.33%; max-width: 33.33%; margin-top: 20px;}
+.foot-bottom-block {padding: 20px 0 20px;}
+.card-type img{max-width: 350px; width: 100%;}
+.foot-bottom-block .foot-logo {max-width: 166px;margin: auto;}
+.other-links{text-align: center;}
+.social-icon{justify-content: center;}
+.social-icon li {margin: 15px 6px 0;}
+/*footer css end*/
+/*-------contact us css start-------*/
+.contact-us-block .nav-tabs .nav-link{font-size: 15px;}
+.contact-us-block .nav-tabs {overflow: hidden;flex-wrap: wrap;}
+/*-------contact us css end-------*/
+/*-----------product detail css start------------*/ 
+.combo-add-table{width: 767px;}
+.product-gallery-block .col-lrg{width: 100%; padding-bottom: 10px;}
+.product-gallery-block .col-small{width: 100%; padding: 0; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.product-gallery-block .col-small .half-height{width: 49%;}
+.review-left-bar{width: 100%; position: static; border: none; padding: 0;}
+.review-right-block{width: 100%; padding: 20px 0 0 0;}
+.bought-together-block .choose-product-set{max-width: 100%;}
+.choose-product-set .create-custom-set{padding: 0;}
+.customer-review .buyer-info .col-left{width: 100%; margin-bottom: 10px;}
+.customer-review ul li {width: calc(50% - 5px);}
+/*-----------product detail css end------------*/ 
+}
+
+@media only screen and (max-width:679px){
+/*header css start*/
+.head-top-bar{padding: 10px 0 0 0;}
+.head-top-bar ul {width: 100%;text-align: center;justify-content: center;margin-bottom: 10px;}
+.navbar-brand img{width: 175px;}
+#nav-icon{top: -102px;}
+/*header css end*/
+/*-----------Home page css start------------*/  
+.home-decor-block .grid-5-col {flex: 0 0 50%; max-width: 50%;}
+.store-block .grid-5-col{flex: 0 0 50%; max-width: 50%;}
+.home-product-category .product-category-card {padding-left: 5px;padding-right: 5px;}
+.store-block .row{margin-left: -5px; margin-right: -5px;}
+.store-block .grid-5-col{padding-left: 5px; padding-right: 5px;}
+/*-----------Home page css end------------*/ 
+/*-------Product listing css start--------*/ 
+.shortBy{width: 100%;}
+.filter-box .shortBy select.form-control {max-width: calc(100% - 70px);width: 100%;}
+/*-------Product listing css end--------*/ 
+/*-------contact us css start-------*/
+.contact-us-block .nav-tabs{border-bottom: none;}
+.contact-us-block .nav-tabs .nav-item{width: 100%;border-bottom: solid 1px #e5e5e5;}
+.contact-us-block .nav-tabs .nav-link{font-size: 15px; padding: 15px 10px;}
+.contact-form-title{font-size: 14px; margin-bottom: 15px;}
+.customer-service{text-align: center; margin-top: 10px;}
+.contact-us-block .service-info{flex-wrap: wrap; justify-content: center;}
+/*-------contact us css end-------*/
+}
+
+@media only screen and (max-width: 575px){
+/*header css start*/
+.navbar-brand img{width: 150px;}
+.head-link li{margin-left: 7px; margin-right: 7px;}
+.site-header .navbar-expand-lg .navbar-collapse{width: 80%; left: -80%;}
+/*header css end*/
+/*-----------Home page css start------------*/  
+.customer-card .btn-view{max-width: 155px; padding: 5px 13px; font-size: 12px;}
+.customer-card .img-box img{min-height: 150px;}
+/*-----------Home page css end------------*/ 
+/*-------Product listing css start--------*/ 
+.product-category-card .product-title{flex-wrap: wrap;}
+.product-category-card .product-title p{width: 100%;}
+.product-category-card .product-title .w-nav {margin: 6px 10px 2px 0;}
+.deal-label{width: 75px;}
+/*-------Product listing css end--------*/
+/*-----------product detail css start------------*/ 
+.product-gallery-block .col-small .half-height{width: 100%;}
+.customer-review .customer-name{font-size: 15px;}
+/*-----------product detail css end------------*/ 
+}
+
+@media only screen and (max-width:479px){
+/*header css start*/
+.head-contact-link li{font-size: 11px; margin-left: 4px;}
+.head-contact-link li a{font-size: 11px;}
+.head-contact-link li a .icon img, .head-contact-link li a .icon svg{height: 12px;}
+.head-contact-link li:nth-child(n+2){padding-left: 4px;}
+.navbar-brand {margin: 10px auto 10px 0;}
+.head-link{width: 100%; justify-content: space-between; margin-left: auto; margin-right: auto; margin-bottom: 9px;}
+#nav-icon{top: -138px;}
+.header-search .form-control{height: 35px; font-size: 13px; padding: 0px 40px 0px 12px;}
+.header-search button{font-size: 15px; padding: 6px 11px;}
+.head-link li .dropdown-menu{left: -60px!important;}
+/*header css end*/
+/*-----------Home page css start------------*/  
+.home-product-category .product-category-card{width: 50%;}
+.home-decor-block .grid-5-col {flex: 0 0 100%;max-width: 100%;}
+/*-----------Home page css end------------*/ 
+/*footer css start*/
+.footer-top-block h3{font-size: 14px;}
+.footer-top-block .grid-5-col {flex: 0 0 50%;max-width: 50%;margin-top: 15px;}
+.foot-link li {margin-top: 3px;font-size: 12px;}
+.foot-bottom-block .other-links a{font-size: 12px;}
+.footer-top-block{margin-bottom: 20px;}
+.foot-mid-block{padding-top: 20px; padding-bottom: 20px;}
+/*footer css end*/
+/*-------Product listing css start--------*/
+.find-box-option{flex-wrap: wrap;}
+.find-box .radio-group{width: 100%; margin: 15px 0 0 0;}
+.common-text p{font-size: 12px;}
+/*-------Product listing css end--------*/
+/*-----------product detail css start------------*/ 
+.product-finish{margin-bottom: 10px;}
+.product-top-info .btn-group .btn-custom {width: 100%;margin-top: 5px;}
+.product-finish.size ul li {width: calc(50% - 5px);max-width: 100%;}
+.product-finish ul li {width: calc(50% - 7px);}
+/*-----------product detail css end------------*/ 
+}

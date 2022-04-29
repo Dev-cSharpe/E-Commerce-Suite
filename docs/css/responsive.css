@@ -131,6 +131,11 @@
 .choose-product-card{margin-bottom: 12px;}
 .customer-review{font-size: 13px;}
 /*-----------product detail css end------------*/ 
+/*---------cart page css start----------*/
+.cart-detail-col{flex:0 0 100%; max-width: 100%; padding: 0;}
+.cart-summry-col{flex:0 0 100%; max-width: 100%; padding: 0; margin-top: 20px;}
+.cart-page .btn-col{flex:0 0 100%; max-width: 100%; padding: 0;}
+/*---------cart page css end----------*/
 }
 
 
@@ -204,6 +209,10 @@
 .customer-service{text-align: center; margin-top: 10px;}
 .contact-us-block .service-info{flex-wrap: wrap; justify-content: center;}
 /*-------contact us css end-------*/
+/*---------cart page css start----------*/
+.address-form .form-group{flex-wrap: wrap;}
+.cart-page .address-form label {width: 100%; margin: 0 0 7px 0;}
+/*---------cart page css end----------*/
 }
 
 @media only screen and (max-width: 575px){
@@ -264,4 +273,8 @@
 .product-finish.size ul li {width: calc(50% - 5px);max-width: 100%;}
 .product-finish ul li {width: calc(50% - 7px);}
 /*-----------product detail css end------------*/ 
+/*---------cart page css start----------*/
+.payment-option .payment-img{height: 25px;}
+.cart-page .coupen .btn-custom{padding: 0 15px;}
+/*---------cart page css end----------*/
 }

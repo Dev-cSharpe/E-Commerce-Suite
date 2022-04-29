@@ -302,13 +302,13 @@ $(".filter-toggle").click(function(){
 
 //sidebar accordian
 $(document).ready(function() {
-  $(".filter-category .filter-category-title, .faq-head").on("click", function() {
+  $(".filter-category .filter-category-title, .faq-head, .cart-block .accordign-head").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $(this)
-        .siblings(".filter-list, .faq-content")
+        .siblings(".filter-list, .faq-content, .accordian-content")
         .slideUp(200);
-      $(".filter-category .filter-category-title i, .faq-head i")
+      $(".filter-category .filter-category-title i, .faq-head i, .cart-block .accordign-head")
         .removeClass("fa-minus")
         .addClass("fa-plus");
     } else {
@@ -319,15 +319,20 @@ $(document).ready(function() {
         .find("i")
         .removeClass("fa-plus")
         .addClass("fa-minus");
-      $(".filter-category .filter-category-title, .faq-head").removeClass("active");
+      $(".filter-category .filter-category-title, .faq-head, .cart-block .accordign-head").removeClass("active");
       $(this).addClass("active");
-      $(".filter-list, .faq-content").slideUp(200);
+      $(".filter-list, .faq-content, .accordian-content").slideUp(200);
       $(this)
-        .siblings(".filter-list, .faq-content")
+        .siblings(".filter-list, .faq-content, .accordian-content")
         .slideDown(200);
     }
   });
 });
+
+//add phone no
+$(".add-no").click(function(){
+  $(".additional, .add-no").addClass('active')
+})
 
 //Counter JS
 function increaseCount(e, el) {
