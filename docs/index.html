@@ -13,6 +13,7 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="images/logo.png">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/framework.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div class="container d-flex justify-content-between flex-wrap align-items-center">
                 <ul class="head-contact-link d-inline-flex flex-wrap">
                     <li><a href="mailto:info@gmail.com">Become a Franchisee</a></li>
-                    <li><a href="tel:+911500154555">Sell on HouseSutra</a></li>
+                    <li><a href="tel:+91123456789">Sell on HouseSutra</a></li>
                 </ul>
                 <ul class="head-contact-link d-inline-flex flex-wrap ml-auto">
                     <li><a href="tel:+91-4445552244"><i class="icon">
@@ -191,6 +192,9 @@
 
                     </i>Track Order</a></li>
                     <li><a href="#"><i class="icon"><img src="images/help.svg" alt="no"></i>Help Center</a></li>
+                    <li><a href="#_" data-toggle="modal" data-target="#Login"><i class="icon"></i>Login</a></li>
+                    <li><a href="#_" data-toggle="modal" data-target="#Registration"><i class="icon"></i>Registration</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -1916,6 +1920,107 @@
         </div>
     </div>
     <!--request call back modal-->
+
+
+
+    <div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a href="#_" class="close-modal-btn" data-dismiss="modal" aria-label="Close"> <img
+                        src="images/close.svg" alt="close"></a>
+                <div class="modal-body">
+                    <div class="request-form">
+                        <div class="section-title text-center">
+                            <h2>Registration</h2>
+                            <p></p>
+                        </div>
+                        <!-- <form> -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text"  class="form-control" placeholder="First Name *">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name *">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email Address *">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Phone Number *">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password *">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Confirm Password *">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button id="btnregis"  class="btn-custom w-100">Submit</button>
+                                </div>
+                                <div class="col-md-12">
+                                    <p id="messageregis"></p>
+                                </div>
+                            </div>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--registration modal-->
+
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <a href="#_" class="close-modal-btn" data-dismiss="modal" aria-label="Close"> <img
+                    src="images/close.svg" alt="close"></a>
+            <div class="modal-body">
+                <div class="request-form">
+                    <div class="section-title text-center">
+                        <h2>Login</h2>
+                    </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" id="login_email" class="form-control" placeholder="Email *">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="password" id="login_password" class="form-control" placeholder="Password *">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button id="btnlogin" class="btn-custom w-100">Login</button>
+                            </div>
+                            <div class="col-md-12">
+                                <p id="messagelogin" style="color:red"></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Login Modal-->
+
+
+
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/owl.carousel.min.js"></script>
