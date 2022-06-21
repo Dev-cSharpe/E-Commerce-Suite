@@ -1,3 +1,18 @@
+$(document).ready(function() {
+
+    if(localStorage.getItem('user')==null)
+    {
+        $( "ul li" ).filter( ".loggedin" ).hide();
+        $( "ul li" ).filter( ".loggedout" ).show();
+    }
+    else{
+        $( "ul li" ).filter( ".loggedin" ).show();
+        $( "ul li" ).filter( ".loggedout" ).hide();
+        $( "ul li" ).filter( ".loggedin" ).find("span#user_name").text(localStorage.getItem('user'));
+    }
+
+})
+
 
 
 /* Login functions
@@ -35,11 +50,13 @@ $(document).on("click","#btnlogin",function() {
     }
 
    if(errorMessage.trim()!='')
+   {
      $("#messagelogin").html(errorMessage);
-
-    //Calling API
-
-    var api_url='https://onboard-module.azurewebsites.net/api/Login?code=yl1EC8luZkd2-xdohKBjnnXb7hjET1sbG5FQcGJgWMpsAzFueNYMvw==';
+   }
+   else
+   {
+    $("#messagelogin").html('');
+   var api_url='https://onboard-module.azurewebsites.net/api/Login?code=yl1EC8luZkd2-xdohKBjnnXb7hjET1sbG5FQcGJgWMpsAzFueNYMvw==';
     var data_={
                 "Email":email,
                 "Password":password
@@ -58,13 +75,23 @@ $(document).on("click","#btnlogin",function() {
                 },
                 error: function (jqXHR, exception) 
                 {
-                    alert(jqXHR.status);
-                    alert(exception);
+                    if(jqXHR.responseText.trim()=='')
+                    {
+                      $("#messagelogin").text("Invalid UserName/Password")
+                    }
+                    else
+                    {
+                        $( "ul li" ).filter( ".loggedout").hide();
+                        $( "ul li" ).filter( ".loggedin" ).show();
+                        $( "ul li" ).filter( ".loggedin" ).find("span#user_name").text(jqXHR.responseText.trim());
+                        $('#Login').modal('toggle');
+                        localStorage.setItem('user',jqXHR.responseText.trim());
+                    }
                 }
 
             });
-
-              
+        }
+            
 });
 
 
