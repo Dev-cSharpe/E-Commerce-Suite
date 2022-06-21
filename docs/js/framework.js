@@ -5,7 +5,7 @@
 
 */
 
-$(document).on("click","#btnlogin",function(){
+$(document).on("click","#btnlogin",function() {
 
     //Validation Part
     var email=$("#login_email").val().trim();
@@ -40,17 +40,31 @@ $(document).on("click","#btnlogin",function(){
     //Calling API
 
     var api_url='https://onboard-module.azurewebsites.net/api/Login?code=yl1EC8luZkd2-xdohKBjnnXb7hjET1sbG5FQcGJgWMpsAzFueNYMvw==';
-    var data={
+    var data_={
                 "Email":email,
                 "Password":password
              };
 
 
-             $.post(api_url,
-             data,
-             function(data, status){
-               alert("Data: " + data + "\nStatus: " + status);
-             });       
+             $.ajax({
+                url: api_url,
+                type: 'POST',
+                data: JSON.stringify(data_),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                async: false,
+                success: function(msg) {
+                    alert(msg);
+                },
+                error: function (jqXHR, exception) 
+                {
+                    alert(jqXHR.status);
+                    alert(exception);
+                }
+
+            });
+
+              
 });
 
 
