@@ -95,7 +95,14 @@ $(document).on("click","#btnlogin",function() {
 });
 
 
-/* Login functions
+/* Logout functions
 
 */
+
+
+function logout()
+{
+    localStorage.removeItem('user');
+    window.location.reload();
+}
 
