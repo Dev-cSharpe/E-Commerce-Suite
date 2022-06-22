@@ -22,6 +22,9 @@ $(document).ready(function() {
 
 $(document).on("click","#btnlogin",function() {
 
+  $("#btnlogin").attr("disabled", true);
+
+
     //Validation Part
     var email=$("#login_email").val().trim();
     var password=$("#login_password").val().trim();
@@ -91,7 +94,7 @@ $(document).on("click","#btnlogin",function() {
 
             });
         }
-            
+        $("#btnlogin").removeAttr("disabled");      
 });
 
 
@@ -115,6 +118,7 @@ Registration
 */
 $(document).on("click","#btnregis",function() {
 
+  $("#btnregis").attr("disabled", true);
   //Validation Part
   var first_name=$("#regis_fname").val().trim();
   var last_name=$("#regis_lname").val().trim();
@@ -234,5 +238,5 @@ $(document).on("click","#btnregis",function() {
 
           });
       }
-          
+       $("#btnregis").removeAttr("disabled");       
 });
