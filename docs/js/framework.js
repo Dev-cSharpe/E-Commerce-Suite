@@ -11,7 +11,7 @@ $(document).ready(function() {
         $( "ul li" ).filter( ".loggedin" ).find("span#user_name").text(localStorage.getItem('user'));
     }
 
-})
+});
 
 
 
@@ -106,3 +106,133 @@ function logout()
     window.location.reload();
 }
 
+
+
+/*
+
+Registration
+
+*/
+$(document).on("click","#btnregis",function() {
+
+  //Validation Part
+  var first_name=$("#regis_fname").val().trim();
+  var last_name=$("#regis_lname").val().trim();
+  var phone=$("#regis_phone").val().trim();
+  var email=$("#regis_email").val().trim();
+  var password=$("#regis_pwd").val().trim();
+  var confirm_password=$("#regis_conpwd").val().trim();
+
+  var errorMessage='';
+
+  if(first_name=='')
+  {
+    errorMessage='FirstName is blank';
+  }
+
+  if(last_name=='')
+  {
+    if(errorMessage=='')
+      errorMessage='LastName is blank';
+    else
+      errorMessage=errorMessage + '</br>' + 'LastName is blank';
+  }
+
+
+  if(email=='')
+  {
+    if(errorMessage=='')
+      errorMessage='Email is blank';
+    else
+      errorMessage=errorMessage + '</br>' + 'Email is blank';
+  }
+
+  if(password=='')
+  {
+    if(errorMessage=='')
+      errorMessage='Password is blank';
+    else
+      errorMessage=errorMessage + '</br>' + 'Password is blank';
+  }
+
+  if(confirm_password=='')
+  {
+    if(errorMessage=='')
+      errorMessage='Confirm-Password is blank';
+    else
+      errorMessage=errorMessage + '</br>' + 'Confirm-Password is blank';
+  }
+
+  if(confirm_password!=password)
+  {
+    if(errorMessage=='')
+      errorMessage='Password and confirm password is not matched';
+    else
+      errorMessage=errorMessage + '</br>' + 'Password and confirm password is not matched';
+  }
+
+
+  if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+  {
+     if(errorMessage=='')
+      errorMessage='Email is invalid';
+    else
+      errorMessage=errorMessage + '<br/>' + 'Email is invalid';
+  }
+
+
+  if(!/^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/.test(phone))
+  {
+    if(errorMessage=='')
+    errorMessage='Phone is invalid';
+  else
+    errorMessage=errorMessage + '<br/>' + 'Phone is invalid';
+  }
+
+ if(errorMessage.trim()!='')
+ {
+  $("#messageregis").css('color','red');
+   $("#messageregis").html(errorMessage);
+ }
+ else
+ {
+  $("#messageregis").html('');
+ var api_url='https://onboard-module.azurewebsites.net/api/Registration';
+  var data_={
+              "Email":email,
+              "Password":password,
+              "Mobile":phone,
+              "FirstName":first_name,
+              "LastName":last_name
+            }
+
+
+           $.ajax({
+              url: api_url,
+              type: 'POST',
+              data: JSON.stringify(data_),
+              contentType: 'application/json; charset=utf-8',
+              dataType: 'json',
+              async: false,
+              success: function(msg) {
+                  alert(msg);
+              },
+              error: function (jqXHR, exception) 
+              {
+                  if(jqXHR.responseText.trim()=='User Created Successfully')
+                  {
+                    $("#messageregis").css('color','green');
+                    $("#messageregis").text(jqXHR.responseText.trim())
+                    
+                  }
+                  else
+                  {
+                    $("#messageregis").css('color','red');
+                    $("#messageregis").text(jqXHR.responseText.trim())
+                  }
+              }
+
+          });
+      }
+          
+});
