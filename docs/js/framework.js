@@ -238,5 +238,7 @@ $(document).on("click","#btnregis",function() {
 
           });
       }
+
+      
        $("#btnregis").removeAttr("disabled");       
 });
